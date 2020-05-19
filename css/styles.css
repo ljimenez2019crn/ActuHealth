@@ -64,10 +64,5 @@ a{
         width: 60%;
 }
 #login{
-   font-size: 1.2rem;
    margin-top: 150px;
-}
-#password{
-    margin-top: 80px;
-}
 }

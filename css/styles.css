@@ -7,8 +7,8 @@ body{
 
 #logo{
     margin: auto;
-    height: 250px;
-    width: 250px;
+    height: 12em;
+    width: 12em;
     background-image:url(../img/Logo.png);
     background-size: 100%;
 }
@@ -24,7 +24,7 @@ input{
     margin: auto;
     margin-top: 30px;
     width: 40%;
-    height: 50px;
+    height: 2em;
     border-radius: 10px;
     background-color: white;
 }
@@ -35,8 +35,8 @@ input{
     right: 0;
     left: 0;
     margin-top: 180px;
-    width: 109px;
-    height: 40px;
+    width: 6.8em;
+    height: 2.5em;
     background-color: #1A5B7E;
     border-radius: 57px;
     color: white;

@@ -23,7 +23,7 @@ input{
     left: 0;
     margin: auto;
     margin-top: 0.3em;
-    width: 60%;
+    width: 40%;
     height: 2em;
     border-radius: 10px;
     background-color: white;
@@ -64,5 +64,6 @@ a{
         width: 60%;
 }
 #login{
+   font-size:;
    margin-top: 150px;
 }

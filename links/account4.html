@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos-principales.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="top">
+        <div id="logo"></div>
+    </div>
+
+    <div id="account">
+        <h1 class="left">Name:</h1> <h1 class="right">Pedro</h1>
+        <h1 class="left">Surname:</h1> <h1 class="right">Cavadas Rodríguez</h1>
+        <h1 class="left">ID Card</h1> <h1 class="right">45685907K</h1>
+        <h1 class="left">Birth</h1> <h1 class="right">4/11/1965</h1>
+        <h1 class="left">Gender</h1> <h1 class="right">Male</h1>
+        <div id="edit2" class="function">
+            <svg viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 15.372V19.4165H4.55357L17.9836 7.48781L13.43 3.44326L0 15.372ZM21.505 4.36002C21.9786 3.93939 21.9786 3.25991 21.505 2.83927L18.6636 0.315475C18.19 -0.105158 17.425 -0.105158 16.9514 0.315475L14.7293 2.28921L19.2829 6.33376L21.505 4.36002Z" fill="white"/>
+            </svg>
+        </div>
+        <div id="line"></div>
+        <div id="password">CHANGE PASSWORD</div>
+    </div>
+    
+
+
+    <ul>
+        <div id="search" class="icon"></div>
+        <a href="Admin4.html"><div id="home" class="icon"></div></a>
+        <div id="menu" class="icon"></div>
+    </ul>
+    
+
+    
+    <div id="Animation" class="menu">
+            <a href="account4.html"><li>ACCOUNT</li></a>
+            <a href="message4.html"><li>MESSAGE</li></a>
+            <a href="../index.html"><li>LOGOUT</li></a>
+    </div>
+    <script type="text/javascript" language="javascript">
+
+        var estat3=document.getElementById('Animation')
+
+        document.getElementById('menu').addEventListener('click',MOSTRAR2);
+        function MOSTRAR2(){
+            if(estat3.style.right=="-170px"){
+                estat3.style.right="0"
+                estat3.style.transition="1s"
+            }
+            else {
+                estat3.style.right="-170px"
+            }
+        }
+
+    </script>
+
+</body>
+</html>

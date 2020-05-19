@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos-principales.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="top">
+        <input type="text" id="buscador" placeholder="Pacient Name">
+        <div id="logo"></div>
+    </div>
+
+    <ul>
+        <div id="search" class="icon"></div>
+        <a href="admin1.html"><div id="home" class="icon"></div></a>
+        <div id="menu" class="icon"></div>
+    </ul>
+    
+    <a href="añadir-paciente1.html"><div class="mas">+</div></a>
+    
+    <div id="Animation" class="menu">
+        <a href="account1.html"><li>ACCOUNT</li></a>
+        <a href="message1.html"><li>MESSAGE</li></a>
+        <a href="../index.html"><li>LOGOUT</li></a>
+    </div>
+    <script type="text/javascript" language="javascript">
+
+
+        var estat1=document.getElementById('buscador');
+        var estat2=document.getElementById('logo');
+        
+        document.getElementById('search').addEventListener('click',MOSTRAR1);
+        function MOSTRAR1(){
+            if(estat1.style.right=="-85vw"){
+                estat1.style.right="0"
+                estat1.style.transition="1s"
+            }
+            else {
+                estat1.style.right="-85vw"
+            }
+            if(estat2.style.backgroundImage.match("img/logo-top.png")){
+                estat2.style.backgroundImage="url(img/logo-pequeño.png)"
+                estat2.style.transition="1s"
+            }
+            else{
+                estat2.style.backgroundImage="img/logo-top.png"
+            }
+        }
+
+        var estat3=document.getElementById('Animation')
+
+        document.getElementById('menu').addEventListener('click',MOSTRAR2);
+        function MOSTRAR2(){
+            if(estat3.style.right=="-170px"){
+                estat3.style.right="0"
+                estat3.style.transition="1s"
+            }
+            else {
+                estat3.style.right="-170px"
+            }
+        }
+
+    </script>
+
+</body>
+</html>

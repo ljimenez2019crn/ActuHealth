@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos-principales.css">
+    <link rel="stylesheet" href="../css/añadir-paciente.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="pacient">
+        
+        <h1 class="left">Name:</h1> <h1 class="right">Aleix</h1>
+        <h1 class="left">Surname:</h1> <h1 class="right">Garcia Urendez</h1>
+        <h1 class="left">ID Card</h1> <h1 class="right">76415599Z</h1>
+        <h1 class="left">Birth</h1> <h1 class="right">30 / 03 / 1997</h1>
+        <h1 class="left">Gender</h1> <h1 class="right">Male</h1>
+        <h1 class="left">Description:</h1>
+        <div id="txt">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
+            unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            It has survived not only five centuries, but also the leap into electronic typesetting, 
+            remaining heets containing Lorem Ipsum passages, and more recently with.</div>
+        <a href="chat2.html"><div id="chat">CHAT</div></a>
+    </div>
+    
+    <ul>
+        <div id="search" class="icon"></div>
+        <a href="Admin3.html"><div id="home" class="icon"></div></a>
+        <div id="menu" class="icon"></div>
+    </ul>
+    <div id="Animation" class="menu">
+        <a href="account3.html"><li>ACCOUNT</li></a>
+        <a href="message3.html"><li>MESSAGE</li></a>
+        <a href="../index.html"><li>LOGOUT</li></a>
+    </div>
+    <script type="text/javascript" language="javascript">
+
+    var estat3=document.getElementById('Animation')
+
+    document.getElementById('menu').addEventListener('click',MOSTRAR2);
+    function MOSTRAR2(){
+        if(estat3.style.right=="-170px"){
+            estat3.style.right="0"
+            estat3.style.transition="1s"
+        }
+        else {
+            estat3.style.right="-170px"
+        }
+    }
+
+    </script>
+</body>

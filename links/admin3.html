@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos-principales.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="top">
+        <input type="text" id="buscador" placeholder="Pacient Name">
+        <div id="logo"></div>
+    </div>
+
+    <div id="pacients">
+        <div id="pacient1" class="patient">
+            <div id="edit"  class="function">
+                <svg viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 15.372V19.4165H4.55357L17.9836 7.48781L13.43 3.44326L0 15.372ZM21.505 4.36002C21.9786 3.93939 21.9786 3.25991 21.505 2.83927L18.6636 0.315475C18.19 -0.105158 17.425 -0.105158 16.9514 0.315475L14.7293 2.28921L19.2829 6.33376L21.505 4.36002Z" fill="white"/>
+                </svg>
+                </div>
+                <div id="delete1" class="delete" class="function"
+                    ><svg width="20" height="21" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.07143 14.2222C1.07143 15.2 2.03571 16 3.21429 16H11.7857C12.9643 16 13.9286 15.2 13.9286 14.2222V3.55556H1.07143V14.2222ZM15 0.888889H11.25L10.1786 0H4.82143L3.75 0.888889H0V2.66667H15V0.888889Z" fill="white"/>
+                    </svg>
+                </div>
+                <a href="pacient1-2.html"><h1 id="id_card">76375902P</h1></a>
+                <a href="pacient1-2.html"><h1>LUIS JIMENEZ NAVARRO</h1></a>
+        </div>
+        
+        <div id="pacient2" class="patient">
+            <div id="edit"  class="function">
+                <svg viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 15.372V19.4165H4.55357L17.9836 7.48781L13.43 3.44326L0 15.372ZM21.505 4.36002C21.9786 3.93939 21.9786 3.25991 21.505 2.83927L18.6636 0.315475C18.19 -0.105158 17.425 -0.105158 16.9514 0.315475L14.7293 2.28921L19.2829 6.33376L21.505 4.36002Z" fill="white"/>
+                </svg>
+                </div>
+                <div id="delete2" class="delete" class="function"
+                    ><svg width="20" height="21" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.07143 14.2222C1.07143 15.2 2.03571 16 3.21429 16H11.7857C12.9643 16 13.9286 15.2 13.9286 14.2222V3.55556H1.07143V14.2222ZM15 0.888889H11.25L10.1786 0H4.82143L3.75 0.888889H0V2.66667H15V0.888889Z" fill="white"/>
+                    </svg>
+                </div>
+                <a href="pacient2.html"><h1 id="id_card">76415599Z</h1></a>
+                <a href="pacient2.html"><h1>ALEIX GARCIA URENDEZ</h1></a>
+        </div>
+    </div>
+
+    <ul>
+        <div id="search" class="icon"></div>
+        <a href="Admin3.html"><div id="home" class="icon"></div></a>
+        <div id="menu" class="icon"></div>
+    </ul>
+    
+    <a href="añadir-paciente3.html"><div class="mas">+</div></a>
+    
+    <div id="Animation" class="menu">
+            <a href="account3.html"><li>ACCOUNT</li></a>
+            <a href="message3.html"><li>MESSAGE</li></a>
+            <a href="../index.html"><li>LOGOUT</li></a>
+    </div>
+    <script type="text/javascript" language="javascript">
+
+        var estat1=document.getElementById('buscador');
+        var estat2=document.getElementById('logo');
+        
+        document.getElementById('search').addEventListener('click',MOSTRAR1);
+        function MOSTRAR1(){
+            if(estat1.style.right=="-85vw"){
+                estat1.style.right="0"
+                estat1.style.transition="1s"
+            }
+            else {
+                estat1.style.right="-85vw"
+            }
+            if(estat2.style.backgroundImage.match("img/logo-top.png")){
+                estat2.style.backgroundImage="url(img/logo-pequeño.png)"
+                estat2.style.transition="1s"
+            }
+            else{
+                estat2.style.backgroundImage="img/logo-top.png"
+            }
+        }
+
+        var estat3=document.getElementById('Animation')
+
+        document.getElementById('menu').addEventListener('click',MOSTRAR2);
+        function MOSTRAR2(){
+            if(estat3.style.right=="-170px"){
+                estat3.style.right="0"
+                estat3.style.transition="1s"
+            }
+            else {
+                estat3.style.right="-170px"
+            }
+        }
+
+        var delete1=document.getElementById('pacient1')
+        document.getElementById('delete1').addEventListener('click',DELETE1);
+        function DELETE1(){
+            if(delete1.style.display=='none'){
+                delete1.style.display='block';
+            }
+            else {
+                delete1.style.display='none'
+            }
+        }
+
+        var delete2=document.getElementById('pacient2')
+        document.getElementById('delete2').addEventListener('click',DELETE2);
+        function DELETE2(){
+            if(delete2.style.display=='none'){
+                delete2.style.display='block';
+            }
+            else {
+                delete2.style.display='none'
+            }
+        }
+
+    </script>
+
+</body>
+</html>

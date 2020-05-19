@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos-principales.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="top">
+        <input type="text" id="buscador" placeholder="Pacient Name">
+        <div id="logo"></div>
+    </div>
+
+    <div id="pacients">
+        <div class="patient">
+                <a href="chat1-3.html"><h1 id="id_card">76375902P</h1></a>
+                <a href="chat1-3.html"><h1>LUIS JIMENEZ NAVARRO</h1></a>
+        </div>
+        <div class="patient">
+            <a href="chat2-2.html"><h1 id="id_card">76415599Z</h1></a>
+            <a href="chat2-2.html"><h1>ALEIX GARCIA URENDEZ</h1></a>
+        </div>
+
+        <div class="patient">
+            <a href="chat3.html"><h1 id="id_card">26449525I</h1></a>
+            <a href="chat3.html"><h1>AARON GALLEGO HERRADOR</h1></a>
+        </div>
+
+    </div>
+
+    <ul>
+        <div id="search" class="icon"></div>
+        <a href=" admin4.html"><div id="home" class="icon"></div></a>
+        <div id="menu" class="icon"></div>
+    </ul>
+    
+    
+    <div id="Animation" class="menu">
+            <a href="account4.html"><li>ACCOUNT</li></a>
+            <a href="message4.html"><li>MESSAGE</li></a>
+            <a href="../index.html"><li>LOGOUT</li></a>
+    </div>
+    <script type="text/javascript" language="javascript">
+
+        var estat1=document.getElementById('buscador');
+        var estat2=document.getElementById('logo');
+        
+        document.getElementById('search').addEventListener('click',MOSTRAR1);
+        function MOSTRAR1(){
+            if(estat1.style.right=="-85vw"){
+                estat1.style.right="0"
+                estat1.style.transition="1s"
+            }
+            else {
+                estat1.style.right="-85vw"
+            }
+            if(estat2.style.backgroundImage.match("img/logo-top.png")){
+                estat2.style.backgroundImage="url(img/logo-pequeño.png)"
+                estat2.style.transition="1s"
+            }
+            else{
+                estat2.style.backgroundImage="img/logo-top.png"
+            }
+        }
+
+        var estat3=document.getElementById('Animation')
+
+        document.getElementById('menu').addEventListener('click',MOSTRAR2);
+        function MOSTRAR2(){
+            if(estat3.style.right=="-170px"){
+                estat3.style.right="0"
+                estat3.style.transition="1s"
+            }
+            else {
+                estat3.style.right="-170px"
+            }
+        }
+
+    </script>
+</body>

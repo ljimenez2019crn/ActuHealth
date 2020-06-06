@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
+    <link rel="stylesheet" href="../../css/estilos-principales.css">
+    <link rel="stylesheet" href="../../css/account.css">
+    <link rel="stylesheet" href="../../css/chat.css">
+    <title>Actuhealth</title>
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="nav" id="nav">
+            <div class="default-nav">
+            <div class="main-nav">
+                <a href="patient2-3.html"><div class="toggle"></div></a>
+                <div class="main-nav-item"><a class="main-nav-item-link" href="#">AARON GALLEGO HERRADOR</a></div>
+            </div>
+            </div>
+        </nav>
+        <div class="inner" id="inner">
+            <div class="content" id="content"></div>
+        </div>
+        <div class="bottom" id="bottom">
+            <textarea class="input" id="input"></textarea>
+            <div class="send" id="send"></div>
+        </div>
+        </div>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+    
+
+    <ul>
+        <div id="search" class="icon"></div>
+        <a href="admin4.html"><div id="home" class="icon"></div></a>
+        <div id="menu" class="icon"></div>
+    </ul>
+    
+    
+    
+    <div id="Animation" class="menu">
+        <a href="account4.html"><li>ACCOUNT</li></a>
+        <a href="message4.html"><li>MESSAGE</li></a>
+        <a href="../../index.html"><li>LOGOUT</li></a>
+    </div>
+    <script type="text/javascript" language="javascript">
+
+        var estat3=document.getElementById('Animation')
+
+        document.getElementById('menu').addEventListener('click',MOSTRAR2);
+        function MOSTRAR2(){
+            if(estat3.style.right=="-170px"){
+                estat3.style.right="0"
+                estat3.style.transition="1s"
+            }
+            else {
+                estat3.style.right="-170px"
+            }
+        }
+    </script>
+
+</body>
+</html>

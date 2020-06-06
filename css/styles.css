@@ -7,9 +7,31 @@ body{
 
 #logo{
     margin: auto;
-    height: 12em;
-    width: 12em;
+    height: 20em;
+    width: 20em;
     background-image:url(../img/Logo.png);
+    background-size: 100%;
+}
+#content{
+    width: 20em;
+    margin: auto;
+}
+#icono1{
+    float: left;
+    margin: auto;
+    margin-top: 2em;
+    height: 10em;
+    width: 10em;
+    background-image:url(../img/icono1.png);
+    background-size: 100%;
+}
+#icono2{
+    float: right;
+    margin: auto;
+    margin-top: 2em;
+    height: 10em;
+    width: 10em;
+    background-image:url(../img/icono2.png);
     background-size: 100%;
 }
 input{
@@ -66,4 +88,18 @@ a{
 #login{
    font-size:;
    margin-top: 150px;
+}
+#logo{
+    width: 16em;
+    height: 16em;
+}
+#icono1{
+    width: 8em;
+    height: 8em;
+    margin-left: 2em;
+}
+#icono2{
+    width: 8em;
+    height: 8em;
+    margin-right: 2em;
 }

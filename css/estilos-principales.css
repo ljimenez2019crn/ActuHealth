@@ -285,10 +285,10 @@ svg{
     display: flex;
 }
 .max{
-    color: #1ED025; 
+    color: red; 
 }
 .min{
-    color: red; 
+    color: #1ED025; 
 }
 #grafico{
     margin: auto auto;

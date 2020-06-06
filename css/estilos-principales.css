@@ -226,10 +226,11 @@ svg{
     margin-top: 10px;
 }
 #profile{
-    width: 60vw;
+    width: 50vw;
     float: right;
 }
 #profile h3{
+    font-size: 1em;
     margin: 0;
     text-align: right;
     line-height: 1.5em;
